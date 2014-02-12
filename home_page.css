@@ -1,0 +1,45 @@
+div .blah
+{
+/*	border:2px solid;
+	border-radius:25px;*/
+	vertical-align: middle;
+/*	background-color: green*/
+	margin-left:   -20px;
+	padding-left:   20px;
+	margin-right:  -20px;
+	padding-right:  20px;
+} 
+
+p {
+	font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
+	font-size: 14px;
+}
+.main {
+	width: 100%;
+}
+.even {
+	background-color: #F3F3F3;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-left:   -50px;
+	padding-left:   50px;
+	margin-right:  -50px;
+	padding-right:  50px;
+	}
+
+.odd{
+	background-color: #C5FFB2;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-left:   -50px;
+	padding-left:   50px;
+	margin-right:  -50px;
+	padding-right:  50px;
+}
+
+.img-responsive{
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
