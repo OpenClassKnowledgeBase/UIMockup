@@ -3,14 +3,13 @@
 <html>
   
   <head>
-    <title>OpenClassKnowledgeBase</title>
+    <title>OCKB</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type = "text/css" href = "home_page.css"> 
     <style type="text/css">
       body {
         padding-top: 50px;
@@ -20,18 +19,39 @@
   </head>
   
   <body>
+  
+    <div class="jumbotron">
+      <div class="container">
+        <img class="pull-right" src="http://www2.hawaii.edu/~alanho/ICS414/Computer-Science.jpg" width="550">
+        <h1>Course Specific</h1>
+        <p>Topics and features customized for your course.<br>
+          Spend less time searching and more time programming.</p>
+        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+      </div>
+    </div>  
+    
+    <div class="jumbotron">
+      <div class="container">
+        <img class="pull-left img-polaroid" src="http://www2.hawaii.edu/~alanho/ICS414/Computer-Science.jpg" width="550">
+        <h1 class="pull-left">&nbsp&nbsp&nbsp Course Specific</h1>
+        <p class="pull-right">Topics and features customized for your course.<br>
+          Spend less time searching and more time programming.<br><br>
+          <a class="btn pull-left btn-primary btn-lg">Learn more &raquo;</a></p>
+      </div>
+    </div>
+    
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">OKCB</a>
+          <a class="navbar-brand" href="index.html">OKCB</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active">
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -39,7 +59,31 @@
             <li>
               <a href="Topics.html">Topics</a>
             </li>
-
+            <li>
+              <a href="submit.html">Submit</a>
+            </li>
+<!--             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li> -->
           </ul>
           <form class="navbar-form navbar-right">
             <div class="form-group">
@@ -53,59 +97,42 @@
         </div>
         <!--/.navbar-collapse -->
       </div>
-      <!-- end navbar -->
     </div>
-        <div class = "row odd">
-          <div class = "col-md-6 ">
-            <h1> Welcome! </h1>
-            <p class = "pull-left">Made by students, for students, the Open Class Knowledge Base features a collaborative environment that lets you interact with your classmates and professors like never before. Learn and grow together in one of the most fundamental ICS classes of your career.</p>
-          </div>
-<!--           <div class="col-md-6 col-sm-6 col-xs-6">
-            <img src = "comm-based.png" class = "img-responsive">
-          </div> -->
-        </div>
-        <div class = "row even">
-          <div class="col-md-6">
-            <img src = "ipadAndphone.png" class = "img-responsive">
-          </div>
-          <div class = "col-md-6">
-            <h1> Learn anywhere, anytime </h1>
-            <p class = "pull-left">Access the Open Class Knowledge Base from your tablet, mobile phone, or your laptop.  Contribute content and ask questions wherever you are, whenever you want.</p>
-          </div>
-        </div>
-        <div class = "row odd">
-          <div class = "col-md-6 ">
-            <h1> Course Collaboration </h1>
-            <p class = "pull-left">The Open Class Knowledge Base is driven by the peers you learn with and the instructors you learn from.  Connect, communicate, and collaborate with people you know and names you recognize.</p>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <img src = "comm-based.png" class = "img-responsive">
-          </div>
-        </div>
-        <div class = "row even">
-          <div class="col-md-6">
-            <img src = "http://www2.hawaii.edu/~alanho/ICS414/Computer-Science.jpg" class = "img-responsive">
-          </div>
-          <div class = "col-md-6">
-            <h1> Designed With You in Mind </h1>
-            <p class = "pull-left">Topics and features customized for your course.  Spend less time searching and more time programming.</p>
-          </div>
-        </div>
-        <div class = "row odd">
-          <div class = "col-md-6">
-            <h1> Lots of content under your fingertips </h1>
-            <p class = "pull-left">The Open Class Knowledge Base has content from all parts of ICS 211. From simple review topics to in-depth analysis of sorting algorithms, the Open Class Knowledge Base will have what you're looking for.</p>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <img src = "http://upload.wikimedia.org/wikipedia/commons/6/60/Mergesort_algorithm_diagram.png" class = "img-responsive">
-          </div>
-        </div>
-        <div class="row button">
-            <div class="col-md-4 col-md-offset-4">
-              <button class="btn btn-primary" type="button">Join Today!</button>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Open Class Knowledge Base<br></h1>
+        <p>This is a web application that facilitates the learning of ICS 211 topics by allowing users to ask questions and submit content.  Got a question or can help with a topic?  Contribute today!</p>
+        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+      </div>
     </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Recent Posts<br></h2>
+          <p>So I found this video on youtube on BST recursion that I really liked.  Maybe it can help?</p>
+          <div class="flex-video widescreen"><iframe src="http://www.youtube.com/embed/ql2oLhDObwA" frameborder="0" allowfullscreen="" width="350" height="281"></iframe></div>
+          <p><a class="btn btn-default" href="postviews.html">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Top Questions<br></h2>
+          <p><h4> Does anyone know of a good explanation for Generics?</h4>I've been Googling around for ages and I still can't figure out how this works.  Does anybody know of a good site or video that really helped them understand this topic?  Maybe with examples?</p>
+          <p><a class="btn btn-default" href="question.html">Read more &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Trending Topics<br></h2>
+          <ul class="list-group">
+          	<li class="list-group-item"><a href="Recursion.html">Recursion</a></li>
+            <li class="list-group-item">ArrayLists</li>
+            <li class="list-group-item">Generics</li>
+            <li class="list-group-item">Linked List</li>
+            <li class="list-group-item">Nodes</li>
+          </ul>
+          <p><br></p>
+          <p></p>
+        </div>
+      </div>
       <hr>
       <footer>
         <p>&copy; Company 2013</p>
