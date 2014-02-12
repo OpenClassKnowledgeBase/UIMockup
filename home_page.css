@@ -6,22 +6,24 @@ p {
 	background-color: #F3F3F3;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	margin-left:   -400px;
-	padding-left:   400px;
-	margin-right:  -400px;
-	padding-right:  400px;
+	padding-left:   40px;
+	padding-right:  40px;
 }
 
 .odd{
 	background-color: #C5FFB2;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	margin-left:   -400px;
-	padding-left:   400px;
-	margin-right:  -400px;
-	padding-right:  400px;
+	padding-left:   40px;
+	padding-right:  40px;
 }
 
+.button{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	float: none;
+}
 .img-responsive{
 	width: 400px;
 	height: 400px;
