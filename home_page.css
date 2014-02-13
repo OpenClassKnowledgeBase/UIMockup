@@ -4,16 +4,16 @@ p {
 }
 .even {
 	background-color: #F3F3F3;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	padding-left:   40px;
 	padding-right:  40px;
 }
 
 .odd{
 	background-color: #C5FFB2;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	padding-left:   40px;
 	padding-right:  40px;
 }
@@ -26,11 +26,95 @@ p {
 }
 .img-responsive{
 	width: 400px;
-	height: 400px;
+	height: 350px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 50px;
+}
+
+.txt-odd {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+}
+
+.txt-even {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	padding-left: 50px;
 }
 
 h1{
 	text-align: left;
+}
+
+.fa-desktop {
+	font-size: 20em;
+	padding-top: 20px;
+}
+
+.fa-tablet {
+	font-size: 12em;
+}
+
+.fa-comments {
+	font-size: 8em;
+	padding-left: 190px;
+	padding-top: 60px;
+}
+
+.fa-users {
+	padding-top: 75px;
+	font-size: 9em;
+}
+
+.fa-users-2 {
+	padding-left: 350px;
+}
+
+.fa-user {
+	padding-top: 120px;
+	padding-left: 170px;
+	font-size: 10em;
+}
+
+.fa-gears {
+	font-size: 13em;
+	padding-top: 12px;
+	padding-left: 100px;
+}
+
+.fa-arrow-left {
+	font-size: 10em;
+}
+.fa-arrow-right {
+	font-size: 10em;
+}
+
+.fa-gray {
+	color: #808080;
+}
+
+.fa-file-text {
+	font-size: 5em;
+	padding-top: 155px;
+	padding-left: 115px;
+}
+
+.fa-picture-o {
+	font-size: 5em;
+	padding-left: 155px;
+	padding-top: 55px;
+}
+
+.fa-cloud {
+	font-size: 18em;
+	padding-top: 150px;
+	padding-left: 50px;
+}
+
+.fa-video-camera {
+	font-size: 5em;
+	padding-top: 155px;
+	padding-left: 250px;
 }
