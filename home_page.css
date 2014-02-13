@@ -1,9 +1,7 @@
 p {
-	font-family: "Lato","Helvetica Neue","Helvetica",sans-serif;
 	font-size: 20px;
 }
 .even {
-	background-color: #F3F3F3;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
@@ -11,7 +9,7 @@ p {
 }
 
 .odd{
-	background-color: #C5FFB2;
+	background-color: #B0C4DE;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
