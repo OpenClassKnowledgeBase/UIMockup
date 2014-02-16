@@ -1,0 +1,21 @@
+.sticky{
+	background-color: green;
+	display:inline;
+}
+.menu{
+	float: left;
+/*	background-color: green;	*/
+}
+
+.content{
+	float: left;
+/*	background-color: blue;*/
+}
+.postCount{
+	text-align: center;
+	font-size: 26px;
+	color:#5BC0DE;
+}
+.label-info{
+	margin-right: 10px;
+}
