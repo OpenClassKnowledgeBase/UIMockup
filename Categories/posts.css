@@ -44,3 +44,21 @@ a.postLink:hover{
 	text-decoration: none;
 	color: #5BC0DE;
 }
+.panel-footer{
+	text-align: right;
+	font-size:12px;
+}
+/*.date{
+	font-size: 12px;
+}*/
+span.badge{
+	font-size:9px;
+	background-color: #5BC0DE;
+}
+.votes{
+	text-align: center;
+	font-size:17px;
+}
+.content{
+	vertical-align: middle;
+}
