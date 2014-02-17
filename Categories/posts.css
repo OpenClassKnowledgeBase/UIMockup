@@ -16,6 +16,31 @@
 	font-size: 26px;
 	color:#5BC0DE;
 }
-.label-info{
+.label{
 	margin-right: 10px;
+}
+a:hover{
+	text-decoration: none;
+}
+div > a:link {
+	font-size: 16px;
+}
+
+div > a:visited{
+	color:#397EBA;
+}
+div > a:hover{
+	color:#397EBA;
+}
+a.postLink:link{
+	text-decoration: none;
+	color:black;
+}
+a.postLink:visited{
+	text-decoration: none;
+	color: black;
+}
+a.postLink:hover{
+	text-decoration: none;
+	color: #5BC0DE;
 }
