@@ -290,7 +290,7 @@
           }
           outputTime = hours + ":" + minutes + " " + mid;
           var input = $('#input-form').val();
-          var newEntry = $('<div class = "panel-body"><div class = "row"><div class = "col-sm-11 content">' + input + '</div><div class = "col-sm-1 votes"><div><span class = "glyphicon glyphicon-chevron-up"></div><div class = "votes">0</div><div><span class = "glyphicon glyphicon-chevron-down"></div></div></div><div class = "authorReply">Submitted by <span class = "badge">You</span><br>Answered ' + outputDate + ' at ' + outputTime + '</div></div>');
+          var newEntry = $('<hr><div class = "panel-body"><div class = "row"><div class = "col-sm-11 content">' + input + '</div><div class = "col-sm-1 votes"><div><span class = "glyphicon glyphicon-chevron-up"></div><div class = "votes">0</div><div><span class = "glyphicon glyphicon-chevron-down"></div></div></div><div class = "authorReply">Submitted by <span class = "badge">You</span><br>Answered ' + outputDate + ' at ' + outputTime + '</div></div>');
           var lastReply = $(".panel-body").get(-1);
           console.log(lastReply);
           $(newEntry).insertAfter(lastReply);
