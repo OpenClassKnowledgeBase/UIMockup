@@ -42,7 +42,7 @@ a.postLink:visited{
 }
 a.postLink:hover{
 	text-decoration: none;
-	color: #5BC0DE;
+	color: #2D6CA2;
 }
 .panel-footer{
 	text-align: right;
@@ -61,4 +61,18 @@ span.badge{
 }
 .content{
 	vertical-align: middle;
+}
+.stats{
+	padding-left: 5px;
+}
+.author{
+	font-size:10px;
+	text-align: right;
+}
+section{
+	margin-bottom: -15px;
+}
+
+.panel-info > .panel-heading{
+	color:black;
 }
