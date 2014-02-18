@@ -1,7 +1,7 @@
 UIMockup
 ========
 
-Phase 2 Mockup of UI for OCKB
+<h4> Phase 2 Mockup of UI for OCKB </h4>
 
 * [Team Meetings](https://github.com/OpenClassKnowledgeBase/OCKB/wiki/Team-Meetings)
 
@@ -13,5 +13,12 @@ Phase 2 Mockup of UI for OCKB
 
 * [Rendered mockup view of application](http://openclassknowledgebase.github.io/UIMockup/)
 
-* [End-To-End Use Cases](https://github.com/OpenClassKnowledgeBase/OCKB/wiki/End-To-End-Use-Cases)
+
+<h4> Milestone 1 deliverables </h4>
+
+* [Stakeholder Requirements] (https://github.com/OpenClassKnowledgeBase/OCKB/wiki/Stakeholder-Requirements)
+
+* [Use Cases](https://github.com/OpenClassKnowledgeBase/OCKB/wiki/Use-Cases)
+
+* [Mockup Evaluation] (https://github.com/OpenClassKnowledgeBase/OCKB/wiki/Mockup-Evaluation)
 
