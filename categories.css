@@ -1,0 +1,13 @@
+div > a:link {
+	font-size: 24px;
+}
+a:hover{
+	text-decoration: none;
+	color:gray;
+}
+p{
+	font-size: 14px;
+}
+h1{
+	text-align: center;
+}
