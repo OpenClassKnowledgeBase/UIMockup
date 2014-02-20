@@ -6,6 +6,7 @@ p {
 	padding-bottom: 1px;
 	padding-left:   40px;
 	padding-right:  40px;
+	background-color: #FCFCFC;
 }
 
 .odd{
@@ -23,8 +24,8 @@ p {
 	float: none;
 }
 .img-responsive{
-	width: 400px;
-	height: 350px;
+	width: 550px;
+/*	height: 500px;*/
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 50px;
