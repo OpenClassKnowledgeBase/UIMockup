@@ -102,7 +102,88 @@
             <div class="panel-body">
               <div class = "row">
                 <div class = "col-sm-11 content">
-                  INFO GOES HERE
+                  <p>
+                    <strong>ArrayList Quick Guide</strong>
+                    <br>
+                    <br>
+                    General:
+                    <br>
+                    An ArrayList is one of the most popular data structures within java for simple Object storage. An ArrayList offers quite a bit more functionality compared to a regular Array.
+                    <br>
+                    <br>
+                    Pros:
+                    <br>
+                    - Dynamic size
+                    <br>
+                    - Works with Generics
+                    <br>
+                    - Iterable
+                    <br>
+                    <br>
+                    Declaration:
+                    <br>
+                    ArrayList<String> myArrList = new ArrayList<String>();
+                    <br>
+                    *You can replace 'String' with any Object Type
+                    <br>
+                    ** 'myArrList' is the variable name, you can name your ArrayList however you want
+                    <br>
+                    <br>
+                    Commonly Used Methods:
+                    <br>
+                    add( Object o ) - puts reference to object into ArrayList
+                    <br>
+                    get( int index ) - retrieves object reference from ArrayList index position
+                    <br>
+                    size() - returns ArrayList size
+                    <br>
+                    remove( int index ) - removes the element at the specified position in this list. Shifts any subsequent elements to the left and returns the element that was removed from the list.
+                    <br>
+                    indexOf( Object o) - finds the index in this list of the first occurrence of the specified element
+                    <br>
+                    clear() - removes all of the elements
+                    <br>
+                    <br>
+                    Example Code:
+                    <br>
+                    import java.util.ArrayList;
+                    <br>
+                    <br>
+                    public class Ex01 {
+                    <br>
+                       public static void main(String[] args) {
+                    <br>
+                         &emsp;ArrayList<String> myArrList = new ArrayList<String>();
+                    <br>
+                           &emsp;&emsp;myArr.add("Bob");
+                    <br>
+                           &emsp;&emsp;myArr.add("Joseph");
+                    <br>
+                           &emsp;&emsp;myArr.add("Alan");
+                    <br>
+                           &emsp;&emsp;myArr.add("Erika");
+                    <br>
+                           &emsp;&emsp;myArr.add("Tyler");
+                    <br>
+                           &emsp;&emsp;myArr.add("Jenn");
+                    <br>
+                           &emsp;&emsp;myArr.add("Eric");
+                    <br>
+                           &emsp;&emsp;myArr.add("Llama");
+                    <br>
+                           &emsp;&emsp;myArr.add("Foo");
+                    <br>
+                           &emsp;&emsp;myArr.add("Bar");
+                    <br>
+                    <br>
+                           &emsp;&emsp;myArr.remove(0);
+                    <br>
+                           &emsp;&emsp;myArr.remove(5);
+                    <br>
+                           &emsp;}
+                    <br>
+                    }
+                  </p>
                 </div>
                 <div class = "col-sm-1 votes">
                   <div>
