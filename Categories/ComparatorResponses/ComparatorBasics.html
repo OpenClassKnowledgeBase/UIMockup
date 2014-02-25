@@ -67,7 +67,7 @@
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
-      <h1>ArrayList</h1>
+      <h1>Comparator</h1>
       <div class="navbar navbar-default"> 
         <div class="container-fluid pull-left"> 
           <div class="navbar-header"> 
@@ -102,7 +102,26 @@
             <div class="panel-body">
               <div class = "row">
                 <div class = "col-sm-11 content">
-                  INFO GOES HERE
+                  <p>General:<br>
+                    The Comparator Interface in Java utilizes the method compare() to impose an ordering on the class implementing the Comparator Interface. This is extremely useful for ordering any type of collection such as lists, sets, maps, etc.</p>
+
+                    <p>Pros:<br>
+                    - Can be delcared in a separate class so you can leave the base code unchanged<br>
+                    - Can declare rules for a non-natural or custom ordering</p>
+
+                    <p>Core Methods:<br>
+                    compare(T obj1, Tobj2) - Compares its two arguments for order. Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.</p>
+
+                    <p>Example Code:</p>
+
+                    <pre><strong>public</strong> <strong>class</strong> PersonAgeComparator <strong>implements</strong> <strong>Comparator</strong>{
+
+  <strong>public</strong> <strong>int</strong> compare(Object o1, Object o2) {
+    person p1 = (Person) o1;
+    Person p2 = (Person) o2; 
+    <strong>return</strong> p1.getPersonAge() - p2.getPersonAge();
+  }
+}</pre>
                 </div>
                 <div class = "col-sm-1 votes">
                   <div>

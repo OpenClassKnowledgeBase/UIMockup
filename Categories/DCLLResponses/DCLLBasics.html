@@ -67,7 +67,7 @@
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
-      <h1>ArrayList</h1>
+      <h1>Double Circular Linked List</h1>
       <div class="navbar navbar-default"> 
         <div class="container-fluid pull-left"> 
           <div class="navbar-header"> 
@@ -102,7 +102,66 @@
             <div class="panel-body">
               <div class = "row">
                 <div class = "col-sm-11 content">
-                  INFO GOES HERE
+                  <p>General:<br>
+A Double Circular Linked List may be a mouthful, but it is not as complex as it sounds. Firstly, a Linked List is just a collection of linked nodes. These nodes contain data and pointers to other nodes. Making a Linked List 'Circular' means that these nodes are linked in a circle. This means that the last node in the list has a pointer to the first node in the list. Taking a Circular Linked List and making it 'Double' or also called 'Doubly' means that all the nodes in the list have two pointers, one pointing to the node prior to itself and one pointing to the node after itself.</p>
+
+<p>Pros:<br>
+- Provides more functionality compared to a simpler linked list<br>
+- More efficient iteration, selection, and deletion</p>
+
+<p>Core Methods:<br>
+offer(E element) - Adds given element at the end of the list<br>
+poll() - Retrieves and removes the head (first element) of this list.<br>
+size() - Returns the number of elements in the list</p>
+
+Example Code:<br>
+<pre>
+public class Node&lt;T&gt; {
+  Node prev;
+  Node next;
+  T data;
+
+  public Node(T data) {
+    this.data = data;
+    prev = null;
+    next = null;
+  }
+}
+
+public class LinkedList&lt;T&gt; {
+  Node&lt;T&gt; head;
+  int size;
+
+  public LinkedList() {
+    head = null;
+    size = 0;
+  }
+
+  public void offer(T newData) {
+    if (head == null) {
+      head = new Node&lt;T&gt;(newData);
+      size++;
+      return;
+    }
+
+    head.prev.next = new Node&lt;T&gt;(newData);
+    head.prev = head.prev.next;
+    size++;
+    return;
+  }
+
+  public void poll() {
+    head.prev = head.next;
+    head.next.prev = head.prev;
+    head = head.next;
+    return;
+  }
+
+  public int size() {
+    return size;
+  }
+}
+</pre>
                 </div>
                 <div class = "col-sm-1 votes">
                   <div>
