@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html>
+  
+  <head>
+    <title>Sorting</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type = "text/css" href = "../posts.css">
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">OCKB</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">            
+            <li>
+              <a href="../../Categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="../../student_dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+          <div class=" navbar-right">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#">Welcome User!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!--- navbar ends here  -->
+
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../Categories.html">Categories</a>
+        </li>
+        <li class="active">Sorting</li>
+      </ol>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search for ..." type="text">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <h1>Sorting</h1>
+      <div class="navbar navbar-default"> 
+        <div class="container-fluid pull-left"> 
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a href="#" disabled class="navbar-brand">Sort By</a>
+          </div>
+          <div class="collapse navbar-collapse pull-left">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Newest</a>
+              </li>
+              <li>
+                <a href="#">Votes</a>
+              </li>
+              <li>
+                <a href="#">Answers</a>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <a href="index.html" class="btn btn-primary">Submit Question</a>
+          </form>
+          </div>
+        </div>
+      </div>
+      <section>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="label label-warning">STICKY</span><a href = "" class = "postLink">Basics of Sorting</a>
+            </div>
+            <div class="panel-body">
+              <div class = "row">
+                <div class = "col-sm-11 content">
+                  <p>   
+                    <b>Concepts:</b> <br>               
+                    - Sorting entails arranging data in order <br>
+                    - Familiarity with sorting algorithms is an important programming skill <br>
+                    - The study of sorting algorithms provides insight into: <br>
+                    &emsp;- problem solving techniques such as divide and conquer <br>
+                    &emsp;- the analysis and comparison of algorithms which perform the same task <br><br>
+
+                    <b>Using Java Sorting methods:</b> <br>
+                     - The Java API provides a class Arrays with several overloaded sort methods for different array types <br>
+                     - The Collections class provides similar sorting methods for Lists <br>
+                     - Sorting methods for arrays of primitive types are based on the quicksort algorithm <br>
+                     - Sorting methods for arrays of objects and Lists are based on the merge sort algorithm <br>
+                     - Both algorithms are O(n log n) <br><br>
+               
+                    <b>Selection Sort:</b> <br>
+                     - Selection sort is relatively easy to understand <br>
+                     - It sorts an array by making several passes through the array, selecting a next smallest item in the array each time and placing it where it belongs in the array  <br>
+                     - All items to be sorted must be Comparable objects, so, for example, any int values must be wrapped in Integer objects <br><br>
+
+                    <b>Bubble Sort:</b> <br>
+                      - Also a quadratic sort <br>
+                      - Compares adjacent array elements and exchanges their values if they are out of order <br>
+                      - Smaller values bubble up to the top of the array and larger values sink to the bottom; hence the name <br><br>
+
+                    <b>Insertion Sort:</b> <br>
+                      - Another quadratic sort, insertion sort, is based on the technique used by card players to arrange a hand of cards <br>
+                      - The player keeps the cards that have been picked up so far in sorted order <br>
+                      - When the player picks up a new card, the player makes room for the new card and then inserts it in its proper place <br><br>
+
+                    <b>Shell Sort:</b> <br>
+                    - A Shell sort is a type of insertion sort, but with O(n3/2) or better performance than the O(n2) sorts <br>
+                    - A Shell sort can be thought of as a divide-and-conquer approach to insertion sort <br>
+                    - Instead of sorting the entire array, Shell sort sorts many smaller subarrays using insertion sort before sorting the entire array <br><br>
+
+                    <b>Merge Sort:</b> <br>
+                    - A merge is a common data processing operation performed on two sequences of data with the following characteristics <br>
+                    - Both sequences contain items with a common compareTo method <br>
+                    - The objects in both sequences are ordered in accordance with this compareTo method <br>
+                    - The result is a third sequence containing all the data from the first two sequences <br>
+                    - We can modify merging to sort a single, unsorted array <br>
+                    - Split the array into two halves <br>
+                    - Sort the left half <br>
+                    - Sort the right half <br>
+                    - Merge the two <br>
+                    - This algorithm can be written with a recursive step <br>
+                  </p>
+                </div>
+                <div class = "col-sm-1 votes">
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-up"></span>
+                  </div>
+                  <div class = "votes">
+                    9001
+                  </div>
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-down"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              Submitted by <span class="badge">theProf</span>
+              <div class = "date">
+                Asked on 1/23/14 at 09:14 AM
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pagination -->
+      <ul class="pagination">
+        <li>
+          <a href="#">Prev</a
+        </li>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">Next</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+</html>

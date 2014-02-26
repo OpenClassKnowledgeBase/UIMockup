@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type = "text/css" href = "posts.css">
-  <style>
-    body{
-/*      padding-top: 70px;*/
-    }
-  </style>
+    <link rel="stylesheet" type = "text/css" href = "../posts.css">
   </head>
   
   <body>
@@ -25,15 +20,15 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">OCKB</a>
+          <a class="navbar-brand" href="../../index.html">OCKB</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">            
             <li>
-              <a href="../Categories.html">Categories</a>
+              <a href="../../Categories.html">Categories</a>
             </li>
             <li>
-              <a href="../student_dashboard.html">Dashboard</a>
+              <a href="../../student_dashboard.html">Dashboard</a>
             </li>
           </ul>
           <div class=" navbar-right">
@@ -47,7 +42,18 @@
         <!--/.navbar-collapse -->
       </div>
     </div>
+    <!--- navbar ends here  -->
+
     <div class="container">
+      <ol class="breadcrumb">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../Categories.html">Categories</a>
+        </li>
+        <li class="active">Sorting</li>
+      </ol>
       <form class="navbar-form navbar-right">
         <div class="form-group">
           <input class="form-control" placeholder="Search for ..." type="text">
@@ -61,7 +67,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
-            <div class="navbar-brand">Sort By</div>
+            <a href="#" disabled class="navbar-brand">Sort By</a>
           </div>
           <div class="collapse navbar-collapse pull-left">
             <ul class="nav navbar-nav">
@@ -76,49 +82,47 @@
               </li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
-              <a href="../submitquestion.html" class="btn btn-primary">Submit Question for Sorting</a>
+              <a href="index.html" class="btn btn-primary">Submit Question</a>
           </form>
           </div>
         </div>
       </div>
-      <!-- Stickies -->
       <section>
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <span class="label label-warning">STICKY</span><a href = "SortingResponses/SortingBasics.html" class = "postLink">The basics of Sorting</a>
-              <span class = "pull-right">Submitted by theProf</span>
-            </div>
-      </section>
-      <section>
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <span class="label label-warning">STICKY</span><a href = "SortingResponses/SortingLinks.html" class = "postLink">Helpful videos and links for Sorting</a>
-              <span class = "pull-right">Submitted by theTA</span>
-            </div>
-        </section>
-      <hr>
-      <!-- Content -->
-        <section>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <span class="label label-info">#148</span><a href = "SortingResponses/postOne.html" class = "postLink">How many types of Sorting should we be familiar with?</a>
-              <span class = "pull-right stats">10 Votes</span>
-              <span class = "pull-right stats">4 Answers</span>
-              <div class = "author">
-                Submitted by <span class = "badge">Paul</span> on 1/15/14
+              <span class="label label-warning">STICKY</span><a href = "" class = "postLink">Helpful videos and links for Sorting</a>
+            </div>
+            <div class="panel-body">
+              <div class = "row">
+                <div class = "col-sm-11 content">
+                As requested by Drew, here are the links he found: <br>
+                  <a href = "https://www.youtube.com/watch?v=ywWBy6J5gz8">QuickSort</a> <br>
+                  <a href = "https://www.youtube.com/watch?v=XaqR3G_NVoo">MergeSort</a> <br>
+                  <a href = "https://www.youtube.com/watch?v=CmPA7zE8mx0">ShellSort</a> <br>
+                  <a href = "https://www.youtube.com/watch?v=Ns4TPTC8whw">SelectSort</a> <br>
+                  <a href = "https://www.youtube.com/watch?v=lyZQPjUT5B4">Bubblesort</a> <br>
+                  <a href = "https://www.youtube.com/watch?v=ROalU379l3U">InsertSort</a> <br>
+                </div>
+                <div class = "col-sm-1 votes">
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-up"></span>
+                  </div>
+                  <div class = "votes">
+                    3
+                  </div>
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-down"></span>
+                  </div>
+                </div>
               </div>
             </div>
-        </section>
-        <section>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <span class="label label-info">#149</span><a href = "SortingResponses/postTwo.html" class = "postLink">[ADD] Helpful links on different Sorting methods on YouTube.</a>
-              <span class = "pull-right stats">11 Votes</span>
-              <span class = "pull-right stats">1 Answers</span>
-              <div class = "author">
-                Submitted by <span class = "badge">Drew</span> on 1/14/14
+            <div class="panel-footer">
+              Submitted by <span class="badge">theTA</span>
+              <div class = "date">
+                Asked on 1/15/14 at 09:24 AM
               </div>
             </div>
+          </div>
         </section>
         <!-- Pagination -->
       <ul class="pagination">
