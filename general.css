@@ -22,3 +22,6 @@ a.postLink:hover{
 .glyphicon{
 	font-size: 18px;
 }
+body{
+	padding-bottom: 50px;
+}
