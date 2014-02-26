@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html>
+  
+  <head>
+    <title>Recursion</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type = "text/css" href = "../posts.css">
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">OCKB</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">            
+            <li>
+              <a href="../../Categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="../../student_dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+          <div class=" navbar-right">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#">Welcome User!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!--- navbar ends here  -->
+
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../Categories.html">Categories</a>
+        </li>
+        <li class="active">Recursion</li>
+      </ol>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search for ..." type="text">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <h1>Recursion</h1>
+      <div class="navbar navbar-default"> 
+        <div class="container-fluid pull-left"> 
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a href="#" disabled class="navbar-brand">Sort By</a>
+          </div>
+          <div class="collapse navbar-collapse pull-left">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Newest</a>
+              </li>
+              <li>
+                <a href="#">Votes</a>
+              </li>
+              <li>
+                <a href="#">Answers</a>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <a href="index.html" class="btn btn-primary">Submit Question</a>
+          </form>
+          </div>
+        </div>
+      </div>
+      <section>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="label label-warning">STICKY</span><a href = "" class = "postLink">Basics of Recursion</a>
+            </div>
+            <div class="panel-body">
+              <div class = "row">
+                <div class = "col-sm-11 content">
+                  <p>   
+                    <b>Concepts:</b> <br>              
+                    Conceptually: Compute a solution to a problem by first computing solutions to smaller instances of the same problem (using the same technique) <br>
+                    Practically: A method that calls itself (usually directly) <br>
+                    Divide and Conquer <br>
+                    Recursion works by modifying a set of data until a certain base condition(s) is met <br>
+                    Recursive calls are placed on the runtime stack so that the results of each call are stored in the order they're called <br>
+                    Use base cases to avoid infinite recursion <br>
+                    The recursive step in general moves towards the base case <br><br>   
+
+                    <b>Base case:</b> <br>
+                     - VERY IMPORTANT <br>
+                     - Stops the recursion which prevents infinite loops. <br>
+                     - Solves the recursion problem by returning a value without calling itself again. <br>
+                     - Often when we reach 1 or 0. <br><br>
+                    
+
+                    <b>Recursive Definitions:</b> <br>
+                    Directly recursive: <br>
+                     - A method that calls itself. <br><br>
+
+                    Indirectly recursive: <br>
+                     - A method that calls another method and eventually results in the original method call. <br><br>
+
+                    Tail recursive method: <br>
+                     - A recursive method in which the last statement executed is the recursive call. <br><br>
+
+                    Infinite recursion: <br>
+                     - A Case where every recursive call results in another recursive call.<br><br>
+
+                    <b>Tracing through a recursive method:</b> <br>
+                     - Go line by line <br>
+                     - Recursive methods may have many copies <br>
+                     - Each recursive method call creates a new copy and transfers the flow of control to the new copy. <br>
+                     - Each copy has its own: <br>
+                        &emsp;- code <br>
+                        &emsp;- parameters <br>
+                        &emsp;- local variables <br>
+                     - After a method completes a recursive call: <br>
+                        &emsp;- Control goes back to the calling environment. <br>
+                        &emsp;- The recursive call must execute completely before control goes back to the previous method call. <br>
+                        &emsp;- Execution in previous call begins from the point immediately following the recursive call. <br><br>
+
+                    <b>Designing recursive methods:</b> <br>
+                     - General strategy: Divide and Conquer <br>
+                     -  Questions to ask yourself: <br> 
+                     &emsp; - How can we reduce the problem to smaller versions of the same problem? <br>
+                     &emsp; - How does each call make the problem smaller? <br>
+                     &emsp; - What is the base case(s)? <br>
+                  </p>
+                </div>
+                <div class = "col-sm-1 votes">
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-up"></span>
+                  </div>
+                  <div class = "votes">
+                    8
+                  </div>
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-down"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              Submitted by <span class="badge">Chad</span>
+              <div class = "date">
+                Asked on 1/23/14 at 09:14 AM
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pagination -->
+      <ul class="pagination">
+        <li>
+          <a href="#">Prev</a
+        </li>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">Next</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+</html>
