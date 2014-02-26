@@ -8,3 +8,14 @@ h1,h2{
 section{
 	margin-bottom: -15px;
 }
+span.badge{
+	font-size:10px;
+	background-color: #5BC0DE;
+}
+a.postLink:visited{
+	text-decoration: none;
+}
+a.postLink:hover{
+	text-decoration: none;
+	color: #2D6CA2;
+}
