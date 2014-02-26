@@ -1,3 +1,10 @@
-h1{
+h1,h2{
 	text-align: center
+}
+
+.replies-author{
+	font-style: italic;
+}
+section{
+	margin-bottom: -15px;
 }
