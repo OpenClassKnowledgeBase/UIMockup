@@ -19,3 +19,6 @@ a.postLink:hover{
 	text-decoration: none;
 	color: #2D6CA2;
 }
+.glyphicon{
+	font-size: 18px;
+}
