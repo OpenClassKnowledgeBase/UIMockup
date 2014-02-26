@@ -54,10 +54,10 @@
     <div class="container">
       <ol class="breadcrumb">
         <li>
-          <a href="../index.html">Home</a>
+          <a href="../../index.html">Home</a>
         </li>
         <li>
-          <a href="../Categories.html">Categories</a>
+          <a href="../../Categories.html">Categories</a>
         </li>
         <li class="active">Tree Traversal</li>
       </ol>
@@ -67,7 +67,7 @@
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
-      <h1>ArrayList</h1>
+      <h1>Tree Traversal</h1>
       <div class="navbar navbar-default"> 
         <div class="container-fluid pull-left"> 
           <div class="navbar-header"> 
@@ -102,7 +102,65 @@
             <div class="panel-body">
               <div class = "row">
                 <div class = "col-sm-11 content">
-                  INFO GOES HERE
+                  <p><h2>General</h2>
+Traversing a Tree data structure is the act of visiting each node exactly once within the Tree. Since Trees have a very complex structure compared to linear data structures, they can be traversed in many different ways. The different traversals all have their own purpose and produce a unique ordering of visited nodes. </p>
+
+<h2>Types of Traversals</h2>
+<p><h3>Depth-First</h3>
+Depth-first search (DFS) is an algorithm for traversing or searching a tree that starts at the root and explores as far as possible along each branch before backtracking. Depth-first searches can be further classified by which order nodes are visited. The three types of depth-first search traversals are:<br><br>
+
+<strong>Pre-order</strong>
+  <ul>
+    <li>Visit the root.</li>
+    <li>Traverse the left subtree.</li>
+    <li>Traverse the right subtree.</li>
+    </ul>
+
+<strong>In-order</strong>
+  <ul>
+    <li>Traverse the left subtree.</li>
+    <li>Visit the root.</li>
+    <li>Traverse the right subtree.</li>
+    </ul>
+
+<strong>Post-order</strong>
+  <ul>
+    <li>Traverse the left subtree.</li>
+    <li>Visit the root.</li>
+    <li>Traverse the right subtree.</li>
+    </ul>
+
+<h4>Algorithms that use DFS</h4>
+  <ul>
+    <li>Finding connected components.</li>
+    <li>Topological sorting.</li>
+    <li>Finding 2-(edge or vertex)-connected components.</li>
+    <li>Finding 3-(edge or vertex)-connected components.</li>
+    <li>Finding the bridges of a graph.</li>
+    <li>Generating words in order to plot the Limit Set of a Group.</li>
+    <li>Finding strongly connected components.</li>
+    <li>Planarity testing</li>
+    <li>Solving puzzles with only one solution, such as mazes. (DFS can be adapted to find all solutions to a maze by only including nodes on the current path in the visited set.)</li>
+    <li>Maze generation may use a randomized depth-first search.</li>
+    <li>Finding biconnectivity in graphs.</li>
+  </ul></p>
+
+  <p><h3>Breadth-First</h3>
+  Breadth-first search begins at a root node and inspects all the neighboring nodes. Then for each of those neighbor nodes in turn, it inspects their neighbor nodes which were unvisited, and so on.
+
+  <h4>Algorithms that use BFS</h4>
+  <ul>
+<li>Finding all nodes within one connected component</li>
+<li>Copying Collection, Cheney's algorithm</li>
+<li>Finding the shortest path between two nodes <i>u</i> and <i>v</i> (with path length measured by number of edges)</li>
+<li>Testing a graph for bipartiteness</li>
+<li>Reverse) Cuthill–McKee mesh numbering</li>
+<li>Ford–Fulkerson methodfor computing the maximum flow in a flow network</li>
+<li>Serialization/Deserialization of a binary tree vs serialization in sorted order, allows the tree to be re-constructed in an efficient manner.</li>
+<li>Construction of the <i>failure function</i> of the Aho-Corasick pattern matcher.</li>
+</ul>
+
+  </p>
                 </div>
                 <div class = "col-sm-1 votes">
                   <div>
