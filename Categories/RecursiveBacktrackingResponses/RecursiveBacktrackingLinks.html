@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type = "text/css" href = "posts.css">
-  <style>
-    body{
-/*      padding-top: 70px;*/
-    }
-  </style>
+    <link rel="stylesheet" type = "text/css" href = "../posts.css">
   </head>
   
   <body>
@@ -25,15 +20,15 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">OCKB</a>
+          <a class="navbar-brand" href="../../index.html">OCKB</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">            
             <li>
-              <a href="../Categories.html">Categories</a>
+              <a href="../../Categories.html">Categories</a>
             </li>
             <li>
-              <a href="../student_dashboard.html">Dashboard</a>
+              <a href="../../student_dashboard.html">Dashboard</a>
             </li>
           </ul>
           <div class=" navbar-right">
@@ -47,7 +42,18 @@
         <!--/.navbar-collapse -->
       </div>
     </div>
+    <!--- navbar ends here  -->
+
     <div class="container">
+      <ol class="breadcrumb">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../Categories.html">Categories</a>
+        </li>
+        <li class="active">Recursive Backtracking</li>
+      </ol>
       <form class="navbar-form navbar-right">
         <div class="form-group">
           <input class="form-control" placeholder="Search for ..." type="text">
@@ -61,7 +67,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
-            <div class="navbar-brand">Sort By</div>
+            <a href="#" disabled class="navbar-brand">Sort By</a>
           </div>
           <div class="collapse navbar-collapse pull-left">
             <ul class="nav navbar-nav">
@@ -76,38 +82,44 @@
               </li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
-              <a href="../submitquestion.html" class="btn btn-primary">Submit Question for Recursive Backtracking</a>
+              <a href="index.html" class="btn btn-primary">Submit Question</a>
           </form>
           </div>
         </div>
       </div>
-      <!-- Stickies -->
       <section>
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <span class="label label-warning">STICKY</span><a href = "RecursiveBacktrackingResponses/RecursiveBacktrackingBasics.html" class = "postLink">The basics of Recursive Backtracking</a>
-              <span class = "pull-right">Submitted by theProf</span>
-            </div>
-      </section>
-      <section>
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <span class="label label-warning">STICKY</span><a href = "RecursiveBacktrackingResponses/RecursiveBacktrackingLinks.html" class = "postLink">Helpful videos and links for Recursive Backtracking</a>
-              <span class = "pull-right">Submitted by theTA</span>
-            </div>
-        </section>
-      <hr>
-      <!-- Content -->
-        <section>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <span class="label label-info">#148</span><a href = "RecursiveBacktrackingResponses/postOne.html" class = "postLink">Examples of Recursive Backtracking?</a>
-              <span class = "pull-right stats">10 Votes</span>
-              <span class = "pull-right stats">4 Answers</span>
-              <div class = "author">
-                Submitted by <span class = "badge">Paul</span> on 1/15/14
+              <span class="label label-warning">STICKY</span><a href = "" class = "postLink">Helpful videos and links for Recursive Backtracking</a>
+            </div>
+            <div class="panel-body">
+              <div class = "row">
+                <div class = "col-sm-11 content">
+                  <a href="http://www.cs.lafayette.edu/~collinsw/maze/MazeApplet.html">Recursive Backtracking through on a maze</a> <br>
+                  <a href="http://www.math.utah.edu/~alfeld/queens/queens.html">N by N Chessboard Qheen problem</a> <br>
+                  <a href="https://en.wikipedia.org/wiki/Backtracking">Wikipedia Backtracking article</a> <br>
+                  <a href="https://www.cs.utexas.edu/~scottm/cs307/handouts/recursiveBacktrackingExplanation.htm">Recursive Backtracking Explanation</a> <br>
+                </div>
+                <div class = "col-sm-1 votes">
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-up"></span>
+                  </div>
+                  <div class = "votes">
+                    5
+                  </div>
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-down"></span>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="panel-footer">
+              Submitted by <span class="badge">theTA</span>
+              <div class = "date">
+                Asked on 1/17/14 at 01:42 PM
+              </div>
+            </div>
+          </div>
         </section>
         <!-- Pagination -->
       <ul class="pagination">
