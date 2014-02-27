@@ -1,0 +1,198 @@
+<!doctype html>
+
+<html>
+  
+  <head>
+    <title>Stacks</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type = "text/css" href = "../posts.css">
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">OCKB</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">            
+            <li>
+              <a href="../../Categories.html">Categories</a>
+            </li>
+            <li>
+              <a href="../../student_dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+          <div class=" navbar-right">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#">Welcome User!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!--- navbar ends here  -->
+
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../../Categories.html">Categories</a>
+        </li>
+        <li class="active">Stacks</li>
+      </ol>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input class="form-control" placeholder="Search for ..." type="text">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <h1>Stacks</h1>
+      <div class="navbar navbar-default"> 
+        <div class="container-fluid pull-left"> 
+          <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a href="#" disabled class="navbar-brand">Sort By</a>
+          </div>
+          <div class="collapse navbar-collapse pull-left">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Newest</a>
+              </li>
+              <li>
+                <a href="#">Votes</a>
+              </li>
+              <li>
+                <a href="#">Answers</a>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <a href="../../submitquestion.html" class="btn btn-primary">Submit Question</a>
+          </form>
+          </div>
+        </div>
+      </div>
+      <section>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="label label-warning">STICKY</span><a href = "StackResponses/StackBasics.html" class = "postLink">Basics of Stacks</a>
+            </div>
+            <div class="panel-body">
+              <div class = "row">
+                <div class = "col-sm-11 content">
+                  <p>   
+                    <b>Stack as an ADT:</b> <br>              
+                    - Simplest ADT (Abstract Data Type): Just a pile <br>
+                    - Behaviors (LIFO = Last In, First Out): <br>
+                    &emsp;- create() = new stack is empty <br>
+                    &emsp;- add(item) = puts item on top of the stack, all items below still in same order <br>
+                    &emsp;- remove() = removes and returns the item from the top of the stack <br>
+                    &emsp;- get() = gets, but does not remove, the item currently on top of the stack <br>
+                    &emsp;- size() = returns the number of items currently in the stack <br>
+                    &emsp;- isEmpty() = false if there is at least one item in the stack (optional) <br>
+                    - ADTs often have specific names for the behaviors they provide: <br>
+                    &emsp;- create() = new stack is empty  //constructor <br>
+                    &emsp;- push(item) = puts item on top of stack, items below still in same order //add <br>
+                    &emsp;- pop() = removes and returns the item from top of the stack //remove <br>
+                    &emsp;- peek() = gets, but does not remove, the item on top of the stack //get <br>
+                    &emsp;- size() = returns the number of items currently in the stack <br><br>
+
+                    <b>Array Based Stacks:</b> <br>
+                    - Store stack data on array <br>
+                    - Keep bottom of stack at 0, use stack pointer to keep track of top-of-stack (TOS) <br>
+                    - Start with TOS pointer at -1 <br>
+                    - On push(item), array[++TOS] = item <br>
+                    - On peek, return array[TOS] <br>
+                    - On pop, return array[TOS--] <br>
+                    - Size, TOS + 1 <br>
+                    - Don't forget to handle when stack is empty <br><br>
+
+                    <b>Node Based Stacks:</b> <br>
+                    Use of singly linked list is sufficient <br>
+                    Keep track of TOS with a node (head) <br>
+                    An empty stack should have a TOS which points to null <br>
+                    push(item), make new node point to what TOS points at, make TOS point to new node <br>
+                    peek, return data in node at TOS <br>
+                    pop, return data in node at TOS, TOS = TOS.next <br>
+                    Keep track of size independently <br>
+                    Don't forget to throw EmptyStackException <br><br>
+
+                    <b>Throwing Exceptions in Java:</b> <br>
+                    - How do you create your own exception from a method you are writing? <br>
+                    - We’ll reuse (!) exceptions already in java.lang, such as: <br>
+                    - IllegalArgumentException or IllegalStateException <br>
+                    - For Stack, IllegalStateException makes sense: the stack is empty, so don’t try to get elements out of it. <br>
+                    - An Exception is a (special) object, so construct it like any other object <br>
+                    - Use throw (like return) to throw the object out of the current method: <br>
+                      public void foo() { <br>
+                      &emsp;&emsp;IllegalStateException err = new IllegalStateException(); <br>
+                      &emsp;&emsp;throw err; <br>
+                      } <br><br>
+
+                    - Or much common in one line: <br>
+                      public void foo() { <br>
+                      &emsp;&emsp;throw new IllegalStateException(); <br>
+                      } <br>
+                  </p>
+                </div>
+                <div class = "col-sm-1 votes">
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-up"></span>
+                  </div>
+                  <div class = "votes">
+                    8
+                  </div>
+                  <div>
+                    <span class = "glyphicon glyphicon glyphicon-chevron-down"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              Submitted by <span class="badge">Chad</span>
+              <div class = "date">
+                Asked on 1/23/14 at 09:14 AM
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pagination -->
+      <ul class="pagination">
+        <li>
+          <a href="#">Prev</a
+        </li>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">Next</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+</html>
