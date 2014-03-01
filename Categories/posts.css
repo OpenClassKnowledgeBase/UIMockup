@@ -22,7 +22,7 @@
 a:hover{
 	text-decoration: none;
 }
-div > a:link {
+div > a:not(.navbar-brand):link{
 	font-size: 16px;
 }
 
