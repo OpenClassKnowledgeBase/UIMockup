@@ -1,7 +1,14 @@
 p {
 	font-size: 20px;
 }
-.even {
+
+.row-top {
+	background-color: #B0C4DE;
+	padding-bottom: 600px;
+	position: relative;
+}
+
+.row-even {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
@@ -9,7 +16,7 @@ p {
 	background-color: #FCFCFC;
 }
 
-.odd{
+.row-odd{
 	background-color: #B0C4DE;
 	padding-top: 1px;
 	padding-bottom: 1px;
@@ -29,6 +36,13 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 50px;
+}
+
+.txt-top {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	position: absolute;
+	bottom: 0;
 }
 
 .txt-odd {
