@@ -30,6 +30,12 @@ p {
 	margin: 0 auto;
 	float: none;
 }
+
+.img-top {
+	padding-left: 120px;
+	padding-top: 10px;
+}
+
 .img-responsive{
 	width: 550px;
 /*	height: 500px;*/
