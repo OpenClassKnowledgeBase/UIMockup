@@ -12,8 +12,8 @@ text-shadow:0px 0px 0 rgb(170,170,170), 1px 1px 0 rgb(114,114,114),2px 2px 1px r
 	padding-bottom: 1px;
 	padding-left:   40px;
 	padding-right:  40px;
-	background-color: #A3C8FF;
-	border:5px solid #FFFFFF;
+	background-color: #2C768A;
+	border:5px solid #000000;
      -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
@@ -21,12 +21,12 @@ text-shadow:0px 0px 0 rgb(170,170,170), 1px 1px 0 rgb(114,114,114),2px 2px 1px r
 }
 
 .odd{
-	background-color: #B3FF9A;
+	background-color: #31A554;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
 	padding-right:  40px;
-	border:5px solid #FFFFFF;
+	border:5px solid #000000;
      -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
