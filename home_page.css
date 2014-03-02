@@ -4,8 +4,11 @@ p {
 
 .row-top {
 	background-color: #B0C4DE;
-	padding-bottom: 600px;
 	position: relative;
+}
+
+.row-top-img {
+	background-color: #B0C4DE;
 }
 
 .row-even {
@@ -33,15 +36,18 @@ p {
 
 .img-top {
 	padding-left: 120px;
-	padding-top: 10px;
 }
 
 .img-responsive{
-	width: 550px;
-/*	height: 500px;*/
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 50px;
+	padding-left: 155px;
+}
+
+.img-odd {
+	padding-left: 40px;
+}
+
+.img-even {
+	padding-left: 30px;
 }
 
 .txt-top {
@@ -52,13 +58,13 @@ p {
 }
 
 .txt-odd {
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-bottom: 40px;
 	padding-left: 50px;
 }
 
 .txt-even {
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 40px;
 	padding-left: 50px;
 }
