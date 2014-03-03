@@ -23,5 +23,7 @@ a.postLink:hover{
 	font-size: 18px;
 }
 body{
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
 	padding-bottom: 50px;
 }

@@ -1,7 +1,20 @@
 p {
 	font-size: 20px;
 }
-.even {
+
+.btn-default{
+	background-color:#F2AE47;
+}
+.row-top {
+	background-color: #B0C4DE;
+	position: relative;
+}
+
+.row-top-img {
+/*	background-color: #B0C4DE;*/
+}
+
+.row-even {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
@@ -9,8 +22,8 @@ p {
 	background-color: #FCFCFC;
 }
 
-.odd{
-	background-color: #B0C4DE;
+.row-odd{
+/*	background-color: #B0C4DE;*/
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
@@ -23,22 +36,38 @@ p {
 	margin: 0 auto;
 	float: none;
 }
+
+.img-top {
+	padding-left: 120px;
+}
+
 .img-responsive{
-	width: 550px;
-/*	height: 500px;*/
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 50px;
+	 margin: 0 auto;
+}
+
+.img-odd {
+	padding-left: 40px;
+}
+
+.img-even {
+	padding-left: 30px;
+}
+
+.txt-top {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	position: absolute;
+	bottom: 0;
 }
 
 .txt-odd {
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-bottom: 40px;
 	padding-left: 50px;
 }
 
 .txt-even {
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 40px;
 	padding-left: 50px;
 }
@@ -117,4 +146,14 @@ h1{
 	font-size: 5em;
 	padding-top: 155px;
 	padding-left: 250px;
+}
+.bottom-text{
+	margin-top: 15px;
+	background-color: #2C3E50;
+	color: white;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+	margin-bottom: 10px;
+	background-color: #F2AE47;
 }

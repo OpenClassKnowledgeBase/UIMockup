@@ -22,7 +22,11 @@
 a:hover{
 	text-decoration: none;
 }
+<<<<<<< HEAD
 div > a:not(.navbar-brand):link {
+=======
+div > a:not(.navbar-brand):link{
+>>>>>>> homepage-redesign-renzee
 	font-size: 16px;
 }
 
@@ -34,11 +38,11 @@ div > a:hover{
 }
 a.postLink:link{
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 a.postLink:visited{
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 a.postLink:hover{
 	text-decoration: none;
@@ -53,7 +57,7 @@ a.postLink:hover{
 }*/
 span.badge{
 	font-size:10px;
-	background-color: #5BC0DE;
+	background-color: #DF691A;
 }
 .votes{
 	text-align: center;
@@ -81,3 +85,14 @@ body {
 	padding-bottom: 50px;
 }
 
+.label-warning, .label-info{
+	border-style:solid;
+	border-width:2px;
+	border-color: white;
+}
+
+/* change color for twitter blue panels*/
+/*.panel-info > div:nth-child(1) > div:nth-child(5) > span:nth-child(1){
+	background-color: #DF691A;
+/*	color: black;*/*/
+}
