@@ -34,11 +34,11 @@ div > a:hover{
 }
 a.postLink:link{
 	text-decoration: none;
-	color:black;
+	color:white;
 }
 a.postLink:visited{
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 a.postLink:hover{
 	text-decoration: none;
@@ -81,3 +81,8 @@ body {
 	padding-bottom: 50px;
 }
 
+.label-warning, .label-info{
+	border-style:solid;
+	border-width:2px;
+	border-color: white;
+}
