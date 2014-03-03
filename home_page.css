@@ -41,11 +41,12 @@ text-shadow:0px 0px 0 rgb(170,170,170), 1px 1px 0 rgb(114,114,114),2px 2px 1px r
 	border:1px solid #FFFFFF
 }
 .img-responsive{
-	width: 450px;
-	height: 400px;
-	margin-left: auto;
+	background-size: 100%;
+	width: 475px;
+	height: 350px;
+/*	margin-left: auto;
 	margin-right: auto;
-/*	padding-left: 50px;*/
+	padding-left: 50px;*/
 	border:1px solid #021a40;
 }
 img{
