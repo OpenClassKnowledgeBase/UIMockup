@@ -2,13 +2,16 @@ p {
 	font-size: 20px;
 }
 
+.btn-default{
+	background-color:#F2AE47;
+}
 .row-top {
 	background-color: #B0C4DE;
 	position: relative;
 }
 
 .row-top-img {
-	background-color: #B0C4DE;
+/*	background-color: #B0C4DE;*/
 }
 
 .row-even {
@@ -16,11 +19,10 @@ p {
 	padding-bottom: 1px;
 	padding-left:   40px;
 	padding-right:  40px;
-	background-color: #FCFCFC;
 }
 
 .row-odd{
-	background-color: #B0C4DE;
+/*	background-color: #B0C4DE;*/
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left:   40px;
@@ -39,7 +41,7 @@ p {
 }
 
 .img-responsive{
-	padding-left: 155px;
+	 margin: 0 auto;
 }
 
 .img-odd {
@@ -61,12 +63,14 @@ p {
 	padding-top: 80px;
 	padding-bottom: 40px;
 	padding-left: 50px;
+	max-width: 500px;
 }
 
 .txt-even {
 	padding-top: 100px;
 	padding-bottom: 40px;
 	padding-left: 50px;
+	max-width: 500px;
 }
 
 h1{
@@ -143,4 +147,14 @@ h1{
 	font-size: 5em;
 	padding-top: 155px;
 	padding-left: 250px;
+}
+.bottom-text{
+	margin-top: 15px;
+	background-color: #2C3E50;
+	color: white;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+	margin-bottom: 10px;
+	background-color: #F2AE47;
 }
