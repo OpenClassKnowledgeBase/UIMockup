@@ -2,12 +2,6 @@ p {
 	font-size: 20px;
 }
 
-@media (max-width: 1200px) {
-    .row .col-lg-6 > .pull-right {
-        float: none !important;
-    }
-}
-
 .btn-default{
 	background-color:#F2AE47;
 }
@@ -68,6 +62,10 @@ p {
 .col-width {
 	max-width: 500px;
 	padding-left: 60px;
+}
+
+.col-txt {
+	padding-top: 50px;
 }
 .txt-odd {
 	/*padding-top: 80px;
