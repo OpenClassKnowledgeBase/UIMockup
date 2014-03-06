@@ -2,6 +2,12 @@ p {
 	font-size: 20px;
 }
 
+@media (max-width: 1200px) {
+    .row .col-lg-6 > .pull-right {
+        float: none !important;
+    }
+}
+
 .btn-default{
 	background-color:#F2AE47;
 }
@@ -25,7 +31,7 @@ p {
 /*	background-color: #B0C4DE;*/
 	padding-top: 1px;
 	padding-bottom: 1px;
-	padding-left:   40px;
+	padding-left:   300px;
 	padding-right:  40px;
 }
 
@@ -59,17 +65,21 @@ p {
 	bottom: 0;
 }
 
+.col-width {
+	max-width: 500px;
+	padding-left: 60px;
+}
 .txt-odd {
-	padding-top: 80px;
+	/*padding-top: 80px;
 	padding-bottom: 40px;
-	padding-left: 50px;
+	padding-left: 50px;*/
 	max-width: 500px;
 }
 
 .txt-even {
-	padding-top: 100px;
+	/*padding-top: 100px;
 	padding-bottom: 40px;
-	padding-left: 50px;
+	padding-left: 50px;*/
 	max-width: 500px;
 }
 
