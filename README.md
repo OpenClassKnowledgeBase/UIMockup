@@ -34,3 +34,4 @@ UIMockup
 * [Installation Instructions 2.0] (https://github.com/OpenClassKnowledgeBase/OCKB/wiki/Installation-Instructions-2.0)
 
 * [GitHub Milestone 2.0 Issues] (https://github.com/OpenClassKnowledgeBase/UIMockup/issues?state=open)
+* [Deployed Application] (http://two.ockb.cloudbees.net/)
